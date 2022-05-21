@@ -1,0 +1,567 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	    font-family: 'Lato', sans-serif;
+	    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	width: 100%;
+
+	background-image: url("../img/bg.png");
+	background-size: cover;
+
+	
+
+
+
+
+
+}
+
+/* navbar kısmı */
+div.nav{
+	text-align: center;
+	position: relative;
+	box-shadow: 5px 1px 15px rgba(45, 52, 54,1.0);
+	z-index: 2;
+	transition: 500ms ease-in-out;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	padding: 0 1%;
+	display: flex;
+
+	justify-content: space-between;
+	height: auto;
+	align-items: center;
+	font-size: 17px;
+	font-weight: bold;
+
+
+}
+div.nav>.logo{
+	display: inline-block;
+
+}
+div.nav>ul{
+		display: flex;
+
+		list-style-type: none;
+}
+.nav>ul>li{
+	height: 100%;
+	display: inline-block;
+
+}
+.nav-a{
+	height: 100%;
+	display: block;
+	margin-right: 5px;
+	padding: 30px 15px;
+	text-decoration: none;
+	color: white;
+	transition: 500ms ease-in-out;
+
+}
+.nav-a:hover{
+	color:red!important;
+}
+.nav-a:active{
+	color: red!important;
+}
+div.nav>a.nav-buton{
+		padding: 15px 25px;
+		background-color: #ffcf00;
+		color: black;
+		text-decoration: none;
+		border-radius: 2px;
+		font-size: 14px;
+		transition: 500ms all;
+	}
+div.nav>a.nav-buton:hover{
+	filter: grayscale(30%);
+	color: #dfe6e9;
+}
+/*acılır menu yapımı*/
+
+div.nav>a#menu-buton{
+	display: none;
+	padding: 15px 25px;
+		background-color: #ffcf00;
+		color: black;
+		text-decoration: none;
+		border-radius: 2px;
+		font-size: 14px;
+}
+/* drp menu kısmı */
+#a2{
+	transition: 500ms all;
+}
+#a2:hover .drpe{
+	display: block;
+}
+
+
+.drpe{
+
+	display: none;
+	transition: 500ms all;
+	box-shadow: 1px 3px 10px gray;
+	position: absolute;
+	list-style: none;
+	width: 100%;
+	background: white;
+
+}
+
+.drpe ul li{
+
+	background: white;
+	list-style: none;
+	
+}
+.drpe a{
+	transition: 500ms all;
+	display: block;
+	padding: 10px 0;
+	text-decoration: none;
+}
+.drpe a:hover{
+	color: red!important;
+}
+.nav-a:hover .up-icon{
+	transform: rotate(180deg)!important;
+}
+/* header content kısmı */
+header .header-content{
+padding-top: 235px;
+padding-bottom: 575px;	
+text-align: center;
+font-weight: bold;
+font-size: 25px;
+text-align: center;
+
+
+
+}
+
+/*header bitiş*/
+
+/*main baslangıc*/
+
+main.content{
+	
+	padding-top: 100px;
+	width: 70%;
+	margin: 0 auto;
+	height: auto;
+
+
+}
+.slider .owl-carousel{
+	padding-top:30px; 
+
+	width: 80%;
+	margin: 0 auto;
+	cursor: pointer;
+
+
+}
+.slider{
+	
+	width: 100%;
+	position: relative;
+	padding:0 50px;
+}
+.sub1{
+	text-align: center;
+	line-height: 100px;
+	color: #d63031;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: 50px;
+
+
+}
+.slider .item{
+
+	margin: 10px;
+	transition: 500ms all;
+	min-width: 100%;
+	padding-top: 50px;
+
+
+
+
+	margin-bottom: 20px;
+}
+.slider .item img{
+	width: 100%;
+
+}
+.slider .item .item-content{
+	box-shadow: 5px 5px 10px #dfe6e9;
+	box-shadow: 5px 5px 10px #dfe6e9;
+	line-height: 2.5em;
+	padding: 50px 30px;
+	text-align: center;
+}
+
+.slider .item .item-content h3{
+	background: linear-gradient(135deg, #071590 0%, #ff003c 100%);
+	 -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider .item .item-content p{
+	color: gray;
+}
+.a1{
+	transition: 300ms all;
+}
+.slider .slider-button img{
+	transition: 500ms all;
+	padding: 5px 10px;
+	margin-right: 10px;
+	display: inline-block;
+	filter: grayscale(100%);	
+
+
+}
+.slider .slider-button{
+	transition: 500ms all;
+	position: absolute;
+	right: 20px;
+	top: -20;
+	line-height: 100px;
+
+
+}
+
+/*slider hover*/
+.slider .item:hover{
+	margin-top: -50px;
+}
+.slider .item:hover p{
+	cursor: pointer;
+	background: linear-gradient(135deg, #071590 0%, #ff003c 100%);
+	 -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider .item:hover .a1{
+	color: #ff003c;
+	padding-left: 5px;
+	transform: rotate(30deg);
+}
+.slider .slider-button .left:hover{
+	margin-right: 30px;
+	filter: grayscale(10%);
+}
+.slider .slider-button .right:hover{
+	margin-left:10px;
+	filter: grayscale(10%);
+	margin-right: -5px;
+
+}
+
+
+/*3x3 kutu baslangıc*/
+main .box-main{
+	margin-top: 150px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+
+}
+main .box-main .box{
+
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	width: 33%;
+
+}
+main .box-main .box img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 500ms all;
+}
+main .box-main .box h4{
+	color: #465064;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+/* box hover işlemleri */
+
+main .box-main .box:hover img{
+	filter: grayscale(0);
+}
+
+
+/*media main kısmı*/
+
+
+div.media-main{
+	margin-top: 150px;
+	margin-bottom: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.media-main h2{
+	text-align: center;
+	line-height: 100px;
+	color: #d63031;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+/*footer on image kısmı*/
+
+div.footer-on-img{
+	width: 100%;
+	height: auto;
+
+}
+div.footer-on-img img{
+	width: 100%;
+
+	height: auto;
+}
+
+/*footer baslangıc*/
+footer{
+	background-color: #0e0f18;
+	color: #949eb2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 50px 20px;
+	text-align: center;
+	font-size: 1.2em;
+
+}
+footer .icons{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	top: 25%;
+	left: 20px;
+}
+footer .icons .i1{
+	cursor: pointer;
+	color:#0e0f18;
+	margin: 1px;
+	background-color: #949eb2;
+	padding: 5px!important;
+}
+/*yukarı butonu*/
+.up1{
+	display: block;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index:2;
+
+}
+div.up1 .i1a{
+	color: white;
+	padding: 20px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #071590 0%, #ff003c 100%);
+	opacity: 0.8;
+}
+/*acılır menu kısım*/
+.menu-full{
+
+	color: white;
+	background: rgba(66, 66, 66,0.9);
+	transition: 500ms all;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -99;
+
+	height: 100vh;
+	width: 0;
+	top: 0;
+	left: 0;
+}
+.menu-full>a{
+	color:#ffcf00 ;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	transition: 500ms all;
+}
+.menu-full>a:hover{
+	transform: rotate(90deg);
+}
+.menu-full>ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	list-style-type: none;
+}
+.menu-full>ul>li{
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.menu-full>ul>li>a{
+	color: white;
+	padding:5px 15px;
+	font-size: 1.5em;
+	font-size: bold;
+	text-align:center;
+	display: block;
+	text-decoration: none;
+}
+.menu-full>ul>li>span{
+
+	width: 0;
+	height: 3px;
+	background-color: #ffcf00;
+	transition: 700ms all;
+	display: inline-block;
+}
+.menu-full>ul>li:hover span{
+	width: 100%;
+	height: 3px;
+	background-color: #ffcf00;
+}
+#menu-full-id{
+	transition: 500ms all;
+}
+
+
+
+
+
+
+/*responsive kısmı*/
+@media screen and (max-width: 1100px) {
+	div.nav{
+		padding: 2% 5%;
+	}
+	div.nav ul{
+		display: none;
+	}
+	div.nav .nav-buton{
+		display: none;
+	}
+	div.nav a#menu-buton{
+	display: block;
+}
+	header{
+		height: 100vh;
+		width: 100%;
+		background-position: fixed;
+		background-attachment: scroll;
+		
+	}
+	header .header-content{
+		margin-top: 50%;
+
+		text-align: center;	
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+
+
+
+}
+.sub1{
+	font-size: 1.8em;
+	line-height: 130%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+div.media-main h2{
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: 130%;
+	margin-bottom: 50px;
+}
+main.content{
+	width: 95%;
+	margin: 0 auto;
+}
+.slider{
+	padding: 0;
+	margin: 1%;
+}
+.slider .owl-carousel{
+	padding-top:30px; 
+
+	width: 100%;
+	margin: 0 auto;
+	cursor: pointer;
+
+
+}
+main .box-main{
+	margin-top: 100px;
+	width: 100%;
+	display:block;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+
+}
+main .box-main img{
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+
+}
+main .box-main .box{
+
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	width: 100%;
+
+}
+
+
+
+}
