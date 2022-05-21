@@ -1,0 +1,427 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+font-family: 'Lato', sans-serif;
+font-weight: 900;
+line-height: 150%;
+
+}
+*::selection { 
+    background: #81ecec;
+    color: #FFFFFF;
+}
+body {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+}
+.body2{
+  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+  overflow:hidden;
+  background-color: #ecf0f1;
+  height: 100vh;
+  width: 100%;
+
+
+}
+header{
+
+
+
+}
+nav{
+    background-color: #ecf0f1;
+  z-index: 5;
+  
+
+  top: 10px;
+  right:  20px;
+  left:20px;
+  display: block;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+
+  transition: all 500ms;
+
+
+}
+.orta{
+  display: block;
+  width: 30%;
+  height: 100%;
+  margin:0 auto;
+
+
+}
+.orta ul{
+
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+
+  
+}
+.orta ul li{
+
+
+  display: inline-block;
+
+}
+.orta ul li{
+  font-size: 25px;
+  padding: 10px 20px;
+
+
+}
+.orta1{
+  color: gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin:0 auto;
+  justify-content: center;
+}
+.orta1 li a{
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo-text{
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  font-weight: bold;
+  font-size: 32px;
+  color: gray;
+}
+.logo-text:after{
+  clear: both;
+  content: "";
+
+
+}
+.logo-text span{
+  color:#81ecec;
+  margin-right: px;
+}
+.son{
+position: absolute;
+right: 20px;
+top:15px;
+}
+.son input{
+  border:0;
+  width: 0;  
+  padding: 10px 10px;
+  background-color: transparent;
+  transition: 500ms;
+
+}
+.son button{
+  transition: 300ms all;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: transparent;
+  border:none;
+  z-index:2;
+}
+nav:hover input{
+  border-bottom:1px solid #81ecec;
+  width: calc(60%);
+  margin-top: 5px;
+  z-index: 1;
+
+}
+
+/* icerik kısmı */
+
+
+
+.content{
+  float: right;
+  z-index: 2;
+  position: relative;
+  right: 50px;
+    width: 80%;
+    height: 25vh;
+    margin-top: 20vh ;
+    right: 10%;
+    height: 500px;
+    width: 500px;
+
+    color: gray;
+    line-height: 150%;
+
+
+
+}
+.content h1{
+  color: gray;
+  margin-bottom: 20px;
+}
+.content h1 span{
+  color :#81ecec;
+}
+.content-button{
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #81ecec;
+  border-color: #81ecec;
+  border:1px solid #81ecec;
+  transition: 300ms all;
+}
+
+/*anasayfa kısmı*/
+main{
+  color: gray;
+  display: block;
+  padding-top: 100px;
+  text-align: center;
+  width: 70%;
+  margin:0 auto;
+
+}
+.col1{
+  position: relative;
+  margin-bottom: 20px;
+  height: auto;
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cizgi{
+  width: 0;
+  height: 2px;
+  background-color: #81ecec;
+  transition: 400ms;
+  margin-bottom: 10px;
+
+}
+.col1:hover .col-sag .cizgi{
+  width: 200px;
+  height: 2px;
+  background-color: #81ecec;
+
+}
+.col-sol{
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.col-sol img{
+  width: 100%;
+  height: auto;
+}
+
+.col-sag{
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+  width: 50%;
+  height: inherit;
+}
+.col-sag h2{
+  display: inline-block;
+  font-weight: bold;
+  color: #81ecec;
+  border:0;
+
+  padding-bottom: 5px;
+  transition: 500ms all;
+}
+
+.clear{
+  clear: both;
+}
+/* developers */
+.developers{
+height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.developers .users{
+  background-color: rgba(178, 190, 195,0.1);
+  box-sizing: border-box;
+  position: relative;
+  
+  width: 25%;
+  margin: 10px;
+  float: left;
+  height: inherit;
+  overflow: hidden;
+
+}
+.developers .users img{
+  transition: 500ms all;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.developer-baslık{
+  width: 80%;
+  height: auto;
+  display: block;
+  margin:0 auto;
+  font-weight: bold;
+  text-align: center;
+  color: gray; 
+}
+.users h2{
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #81ecec;
+  color: white;
+  transition: 500ms all;
+ 
+  font-size: 20px;
+
+
+
+  display: none;
+}
+.developers .users:hover img{
+margin-left: 20px;
+margin-top: 20px;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 0;
+  z-index: 1;
+  display: block;
+}
+.developers .users:hover h2{
+  z-index: 1;
+  display: block;
+  padding:10px;
+}
+
+/*cizgila ekleme*/
+.cizgila{
+
+  width: 0%;
+  height: 3px;
+  border-radius: 1px;
+  transition: 500ms;
+  background-color:  #81ecec;
+  margin:0 auto;
+
+}
+
+main:hover .cizgila{
+  width: 25%;
+}
+
+.opt{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animason {
+margin-top: 100px;
+position: absolute;
+top: 25vh;
+width: 80%;
+  left: 10000px;
+  width: 100%;
+  margin: 0;
+  background-color: #ecf0f1;
+  overflow: hidden;
+
+}
+
+#webgl {
+  background-color: #ecf0f1;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+}
+
+#webgl2 {
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: 2;
+}
+
+#bg-box {
+  background-color: #ecf0f1;
+  width: 802px;
+  height: 602px;
+  position: absolute;
+  z-index: -1;
+}
+
+.svg-box {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  background-color: #ecf0f1;
+
+  #robot {
+    cursor: pointer;
+  }
+}

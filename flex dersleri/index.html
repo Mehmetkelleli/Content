@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex dersleri</title>
+	<style type="text/css">
+		.container{
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		.header{
+			background-color: aqua;
+			padding: 30px;
+		}
+			.main{
+			background-color: red;
+			padding: 30px;
+			flex: 1;
+		}
+		.sidebar{
+			background-color: yellow;
+			padding: 30px;
+			flex-basis: 20%;
+		}
+		.footer{
+			background-color: green;
+			padding: 30px;
+		}
+		.content{
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header"></div>
+		<div class="content">
+		<div class="sidebar"></div>
+		<div class="main"></div>
+			
+
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

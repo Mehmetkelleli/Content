@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  /* visibility: hidden; */
+}
+
+.bubble__move {
+  fill:#FFDEFE;
+  stroke:#F286E6;
+  stroke-width:0.7;
+  stroke-miterlimit:10;
+}
+
+#square {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
