@@ -8,3 +8,13 @@ I have developed dynamic blog and corporate style applications with html css boo
 I am learning git system for teamwork<br>
 I mean, I have a lot of things to do, but everything depends on my dreams.
 <br>I am working to develop a strong motivation and experience.<br> I plan to take a step to improve myself and the institution I entered.
+<h4>Technologies I use</h4>
+<ul>
+  <li>.net core 5 and services(rest api etc.)</li>
+  <li>Html,css,bootstrap</li>
+  <li>Javascript</li>
+  <li>Php(native)</li>
+  <li>Mysql,Mssql,Sqlite</li>
+  <li>...</li><ul>
+  <hr>
+ I am well-versed in technologies such as these and I can solve my own problems in cases where I cannot deal with them thanks to their documentation.
