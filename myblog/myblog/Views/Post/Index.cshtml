@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model PostCategoriesViewModel
+           <div class="card col-12">
+              <div class="card-header">
+                <h3 class="card-title">Posts Table</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Picture</th>
+                      <th>Name</th>
+                      <th>Categories</th>
+                      <th>Aktive Slider</th>
+                      <th colspan="2">Procces</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   @foreach (var item in Model.Posts)
+                  {
+                      <tr>
+                          <td><img class="m-1" width="50" src="@item.Picture"></td>
+                          <td>@item.Name</td>
+                          <td>@Model.Categories.FirstOrDefault(s=>s.Id==item.CAtegoryId).Name</td>
+                        <td>@{
+                                if (item.Aktive == true)
+                                {
+                                    <p class="text-success">Aktive</p>
+                                }
+                                if(item.Aktive==false)
+                                {
+                                    <p class="text-danger">Not Aktive</p>
+                                    
+                                }                                        
+                            }
+                          </td>
+                          <td><a href="/Post/PostUpdate/@item.Id/"><Button class="btn btn-warning">Update</Button></a></td>
+                          <td><a href="/Post/PostDelete/@item.Id/"><Button class="btn btn-danger">Delete</Button></a></td>
+
+                      </tr>
+                  }
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.card -->

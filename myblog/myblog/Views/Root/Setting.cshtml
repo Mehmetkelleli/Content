@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewData["Title"] = "Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@model MySettingViewmodel
+
+     <div class="card card-warning w-100">
+              <div class="card-header">
+                <h3 class="card-title">Site Settings</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form method="post" action="/root/setting/">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Site Logo</label>
+                        <input class="form-control" type="text" name="Logo" value="@Model.setting.Logo">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Home Page Title</label>
+                        <input class="form-control" type="text" name="HomePageTitle"  value="@Model.setting.HomePageTitle">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- textarea -->
+                      <div class="form-group">
+                        <label>Home Page Content</label>
+                        <textarea class="form-control" rows="3" type="text" name="HomePageContent" value="@Model.setting.HomePageContent">@Model.setting.HomePageContent</textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- textarea -->
+                      <div class="form-group">
+                        <label>Meta Tags</label>
+                        <textarea class="form-control" rows="3" type="text" name="Meta" Value="@Model.setting.Meta">@Model.setting.Meta</textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="Id" value="@Model.setting.Id">
+                  <button type="submit" class="btn btn-danger">Update</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+                        <!--Bu alan kullanıcı ayar kısımı-->
+            <div class="card card-warning w-100 ml-3">
+              <div class="card-header">
+                <h3 class="card-title">User Setting</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form method="post" action="/root/UserSetting/">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>User Name</label>
+                        <input class="form-control" type="text" name="Name" value="@Model.my.Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>School</label>
+                        <input class="form-control" type="text" name="School" value="@Model.my.School">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Job</label>
+                        <input class="form-control" type="text" name="Job" value="@Model.my.Job">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Facebook Url</label>
+                        <input class="form-control" type="text" name="Facebook" value="@Model.my.Facebook">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Whatsapp Api</label>
+                        <input class="form-control" type="text" name="Wp" value="@Model.my.Wp">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>İnstagram Url</label>
+                        <input class="form-control" type="text" name="İnstagram" value="@Model.my.İnstagram">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>İnstagram Url</label>
+                        <input class="form-control" type="text" name="İnstagram" value="@Model.my.İnstagram">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Profile İmg Url</label>
+                        <input class="form-control" type="text" name="İmgurl" value="@Model.my.İmgUrl">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="Id" value="@Model.my.Id">
+                  <button type="submit" class="btn btn-danger">Update</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
+
+
+
+

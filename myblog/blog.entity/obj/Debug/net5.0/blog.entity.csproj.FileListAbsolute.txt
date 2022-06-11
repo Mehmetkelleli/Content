@@ -1,0 +1,12 @@
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0\blog.entity.deps.json
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0\blog.entity.pdb
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.csproj.AssemblyReference.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.AssemblyInfoInputs.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.AssemblyInfo.cs
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\refint\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\blog.entity.pdb
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0\ref\blog.entity.dll

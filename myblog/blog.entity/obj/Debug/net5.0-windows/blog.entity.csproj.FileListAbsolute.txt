@@ -1,0 +1,12 @@
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0-windows\blog.entity.deps.json
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0-windows\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\bin\Debug\net5.0-windows\blog.entity.pdb
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.csproj.AssemblyReference.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.AssemblyInfoInputs.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.AssemblyInfo.cs
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\refint\blog.entity.dll
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\blog.entity.pdb
+C:\Users\Mehmet Kelleli\Desktop\myblog\myblog\blog.entity\obj\Debug\net5.0-windows\ref\blog.entity.dll

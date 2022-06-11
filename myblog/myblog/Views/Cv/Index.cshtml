@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Cv
+<div class="card card-warning w-100">
+              <div class="card-header">
+                <h3 class="card-title">CV Setting</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form method="post">
+                  <div class="row">
+
+
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Cv Header Content</label>
+                        <textarea class="summernote"asp-for="HeaderContent" value="@Model.HeaderContent"></textarea>
+                    </div>
+                   </div>
+                   <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>CV Title</label>
+                        <input class="form-control" asp-for="CvTitle" value="@Model.CvTitle">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Cv Content</label>
+                        <textarea class="summernote" asp-for="CvContent" value="@Model.CvContent">@Model.CvContent</textarea>
+                    </div>
+                   </div>
+                  </div>
+                  <input class="form-control" type="Hidden" asp-for="Id" value="@Model.Id">
+                  <button type="submit" class="btn btn-danger">Post Update</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+

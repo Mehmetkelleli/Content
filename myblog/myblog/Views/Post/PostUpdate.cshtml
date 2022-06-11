@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "PostUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Post
+
+<div class="card card-warning w-100">
+              <div class="card-header">
+                <h3 class="card-title">Post Update</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form method="post" action="/Post/PostUpdate/">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Post Name</label>
+                        <input class="form-control" asp-for="Name" value="@Model.Name">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Post Description</label>
+                        <textarea id="summernote" asp-for="Description" value="@Model.Description"></textarea>
+                    </div>
+                   </div>
+                   <div class="col-md-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Post İmg Url</label>
+                        <input class="form-control" asp-for="Picture" value="@Model.Picture">
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" asp-for="Aktive">
+                          <label class="form-check-label">Aktive Blog Page</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>Select Category</label>
+                        <select class="form-control" asp-items="@ViewBag.liste" asp-for="CAtegoryId">
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                   <input class="form-check-input" asp-for="Id" type="hidden" value="@Model.Id">
+                  <button type="submit" class="btn btn-danger">Post Update</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
+

@@ -1,0 +1,45 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Category>
+            <div class="card col-6">
+              <div class="card-header">
+                <h3 class="card-title">Categories Table</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="">#</th>
+                      <th>Name</th>
+                      <th colspan="2">Procces</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   @foreach (var item in Model)
+                  {
+                      <tr>
+                          <td>@item.Name</td>
+                          <td><a href="/Category/CategoryUpdate/@item.Id/"><Button class="btn btn-warning">Update</Button></a></td>
+                          <td><a href="/Category/CategoryDelete/@item.Id/"><Button class="btn btn-danger">Delete</Button></a></td>
+
+                      </tr>
+                  }
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.card -->

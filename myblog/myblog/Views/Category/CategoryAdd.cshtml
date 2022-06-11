@@ -1,0 +1,27 @@
+﻿@model Category
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+     <div class="card card-warning w-100">
+              <div class="card-header">
+                <h3 class="card-title">Category Add</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form method="post" action="/Category/CategoryAdd/">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Category Name</label>
+                        <input class="form-control" asp-for="Name" value="@Model.Name">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-danger">Category Add</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
